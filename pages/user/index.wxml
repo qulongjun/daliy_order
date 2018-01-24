@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+  <image src='/pages/user/assets/images/bg.jpg' style='width:100%;position:fixed;top:0px;z-index:-1;height:150px;'></image>
+    <image wx:if="{{!hasUserInfo && canIUse}}" class="userinfo-avatar" open-type="getUserInfo" background-size="cover" src='/pages/user/assets/images/wechat-login.png'></image>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" plain="true" type="default" size="mini"> 点此登陆 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>

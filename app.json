@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/index",
+    "pages/user/index",
+    "pages/order/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#FF9900",
+    "navigationBarTitleText": "触宝AI实验室",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#707070",
+    "selectedColor":"#FF9900",
+    "borderStyle":"black",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/index/assets/images/icons/home.png",
+        "selectedIconPath": "/pages/index/assets/images/icons/homeSelected.png"
+      },{
+        "pagePath": "pages/list/index",
+        "text":"历史",
+        "iconPath":"/pages/list/assets/images/icons/list.png",
+        "selectedIconPath": "/pages/list/assets/images/icons/listSelected.png"
+      },{
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "/pages/user/assets/images/icons/user.png",
+        "selectedIconPath": "/pages/user/assets/images/icons/userSelected.png"
+      }
+    ]
+  }
+}
